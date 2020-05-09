@@ -1,0 +1,32 @@
+
+/* este documento hace que sea resposive en una version mobile */
+
+@media (max-width: 900px) {
+
+    .productos{
+      display: inherit;
+      height: auto;
+
+    }
+    .servicios{
+      margin-top:auto;
+    }
+
+    .seccion_de_menu{
+      padding: 1%;
+
+    }
+    .beneficios,.mentions  {
+      display: inherit;
+    }
+    /* .mentions{
+      display: inherit;
+    } */
+
+    
+    body{
+      background: #FAFAFA;
+    }
+
+
+}

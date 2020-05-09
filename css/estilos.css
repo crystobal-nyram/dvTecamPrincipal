@@ -1,0 +1,301 @@
+/*creacion de variables para la optimizacion del diseño*/
+:root{
+  /* todo lo que pongamos en root esta disponibles para las demas */
+  --verde-color:#00212B;
+  --blanco-color:white;
+
+ /* variables para el espaciado general */
+
+--espaciado:10px;
+
+/* seccion de tamaño de tipografia */
+--tamaño:15px;
+/*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+}
+
+
+
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  /* un cambio de letra en general */
+  font-size: var(--tamañoT);
+ /* tipografia que usaremos */
+  font-family: Helvetica;
+
+
+}
+
+nav{
+  /* para cambiar posicion del texto  */
+  /* para agregar y acomodar el texto en vertical */
+  display: fllex ;
+
+  background-color:var(--verde-color) ;
+  padding: .5px;
+  /* colo adentro del nav */
+  color:var(--blanco-color);
+   /* aliniar una imagen */
+  align-items:center ;
+}
+nav ul{
+    display: flex;
+    /* aquí estamos acomodando el texto asía la derecha */
+      justify-content:space-between ;
+}
+nav li{
+        /* es el espacio que se dan a los costados  */
+       padding-left:20px;
+       /* le quita el puntito alas listas */
+        list-style: none;
+
+}
+nav li a{
+  /* aqui estaremos editando los links */
+  color: var(--blanco-color);
+  /* le quitamos que este subrrayado  */
+  text-decoration: none;
+}
+
+ /* diseño del menu */
+nav li a:hover{
+  /* acerca de las acciones del boton */
+  color: var(--blanco-color);
+font-size:20px;
+font-style:oblique;
+}
+
+
+ /* seccion de menu de productos-------------------------------------------------------------------; */
+
+.seccion_de_menu{
+   padding:10%;
+
+}
+
+.productos{
+  /* aquí pondremos la imagen de la curva
+   */
+
+  background-image: url("../images/curve.png");
+  height:5px;
+  /* configuración para colocar bien nuestra imagen llamada */
+  background-size: cover;/*le indicamos que ocupe solo el tamñao del div*/
+  /* cambiar la posicion */
+  background-position: content top;
+  padding: 15%;
+  display: flex;
+
+
+}
+
+.servicios{
+  /* esto genera la separación de los archivo de nuestro producto */
+  padding: 25px;
+   /* aqui subiriamos o bajaramos los productos de acuerdo a nuestro gusto */
+  margin-top: -200px;
+
+
+}
+
+.servicios .contenido-de-servicios{
+  background-color: var(--blanco-color);
+  padding: 15px;
+  /* generar una sombra */
+  box-shadow: 0 0 15px #004927;
+
+
+}
+ /* aquí estan las imagenes del producto */
+.productos .servicios .contenido-de-servicios .imagenP .imagen-producto{
+  border: 5px;
+ width: 300px; height: 200px;
+ text-align: center;
+}
+
+/* boton de nuestros prodcutos */
+.boton-de-menu{
+  background-color: var(--verde-color);
+  width: 100%;
+  padding: var(--espaciado);
+  font-size:17;
+  /* color de la letra */
+  color:var(--blanco-color);
+  /* quitar el borde */
+  border: 0px;
+
+  /* para que la menu del sistema aparezca */
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* aqui le damos el efecto de profundidad a nuestro botton */
+.boton-de-menu:hover{
+ background-color:#74D261 ;
+}
+.pie-de-pagina{
+  margin: 10px;
+  padding-left:20px;
+  background-color: #585858;
+
+}
+
+/* fin de main------------------------------------------------------------------------------------- */
+
+
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+  margin: 10px;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+  padding: 10%;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+
+
+
+
+
+
+
+ /* pie de pagina ---------------------------------------------------------------------------- */
+footer ul{
+  display: flex;
+  /* aquí estamos acomodando el texto asía la derecha */
+     justify-content:space-between ; */
+
+}
+footer li{
+  padding-left:0px;
+  /* le quita el puntito alas listas */
+   list-style: none;
+
+}
+.pie-de-pagina .terminos-condiciones {
+
+  background-color:#585858;
+  width: 100%;
+  padding: var(--espaciado);
+  font-size:12;
+  /* color de la letra */
+  color:var(--blanco-color);
+  /* quitar el borde */
+  border: 0px;
+
+  /* para que la menu del sistema aparezca */
+  cursor: pointer  ;
+}
+.pie-de-pagina .terminos-condiciones:hover{
+  background-color:var(--verde-color);
+}
+
+
+.pie-de-pagina .correo .boton-correo{
+  background-color:#585858;
+  width: 100%;
+  padding: var(--espaciado);
+  font-size:12;
+  /* color de la letra */
+  color:var(--blanco-color);
+  /* quitar el borde */
+  border: 0px;
+
+  /* para que la menu del sistema aparezca */
+  cursor: pointer;
+
+
+
+}
+.boton-correo a{
+  color:white;
+}
+.pie-de-pagina .correo .boton-correo:hover{
+  background-color:var(--verde-color);
+}
+/* -------------------------------------------------------------------------------venta */
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 1px #585858;/*color de sombra*/
+  padding: 10px;
+}
+.imagenes_modulo_pago{
+  max-width: 150px;
+  max-height: 150px;
+  /*centar imagen*/
+  text-align: center;
+  margin: auto;/*para esto debemos usar el inspector de elemento*/
+
+}
+/**-----------------------------------------------------------------------------FORMULARIO*/
+label{
+    font-size: 15px;/*tamaño de letra*/
+
+
+}
+.data{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #717882;/*para borrar el borde extra*/
+  /*definir desde donde toma referecncia el ancho*/
+  box-sizing: border-box;/*toma de referecnai el borde*/
+}
+.modulo_pago textarea{
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  border: 1px solid #717882;
+}
+
+.modulo_pago .boton-de-menu{
+  /*le da un espaciado
+    margin-top: 10px;*/
+
+}
+/*----------------------------------------------------------------------------PAYPAL*/
+.contenido_paypal a{
+  color:BLUE;
+}
+
+.contenido_paypal img{
+  border-radius:2px;
+  border: none;
+}

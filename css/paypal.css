@@ -1,0 +1,18 @@
+body{
+  padding: 10%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.contenido_paypa{
+/*tamaño de la pantalla*/
+height: 100vh;
+
+}
+.contenido_paypal{
+
+
+}
